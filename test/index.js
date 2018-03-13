@@ -1,9 +1,5 @@
-# observants
-observants is a mini RxJS implementation with the following operators: **map**, **filter**, **reduce**, **scan**, **every**, **of**, **from**, **skip**, **take**, **range**, **timer**, **interval**, **fromEvent**, **fromPromise**, **pipe**
+const { Observable, Observer, Subscriber } = require('../dist')
 
-## Examples
-```js
-const { Observable, Observer, Subscriber } = require('observants');
 
 let observable1 = Observable.create(observer => {
   let i = 0
@@ -211,25 +207,3 @@ setTimeout(() => {
 
 }, 4500)
 
-```
-
-## Installation
-
-```
-npm install --save observants
-```
-
-## Usage
-You can import one or multiple operators from `observants`:
-
-```js
-const { Observable, Observer, Subscriber } = require('observants');
-// or
-import { Observable, Observer, Subscriber } from 'observants';
-```
-
-## Todo
-
-> Subject
-
-> Scheduler

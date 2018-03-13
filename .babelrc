@@ -1,0 +1,21 @@
+{
+  "presets": [
+    ["env", {
+      "targets": {
+        "browsers": ["last 2 versions", ">= 1%"]
+      }
+    }]
+  ],
+  "plugins": [
+    ["transform-class-properties", { "spec": true }],
+    "transform-object-rest-spread",
+    "transform-runtime"
+  ],
+  "env": {
+    "test": {
+      "plugins": [
+        ["istanbul", "source-map-support"]
+      ]
+    }
+  }
+}
